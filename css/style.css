@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 24px;
+    background-color: #59718c;
+    height: 80px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .logo{
+    background-image: url("../media/logo.png");
+    width:32px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+main{
+    background-color: #0c1c2c;
+    min-height: calc(100vh - 80px);
+    padding: 40px 80px;
+}
+
+.login-container{
+    background-image: url(../media/background.jpg);
+    background-size: cover;
+    filter: grayscale(0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    padding: 40px;
+    background-color: rgba(104, 128, 155, 0.9);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: #59718c 4px solid;
+    border-radius: 16px;
+}
+
+.form-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 25vw;
+}
+
+.form-wrap label{
+    font-size: 1.2em;
+}
+
+.form-wrap input{
+    width: 15vw;
+}
+
+.btn{
+    background-color: #f2f2f2;
+    color: #1f1f1f;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 1.2em;
+    min-width: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-form .btn{
+    margin-top: 32px;
+}
+
+.header-user{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.user-avatar{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    background-image: url("../media/avatar.png");
+    background-size: cover;
+    background-position: center;
+}
