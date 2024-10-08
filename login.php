@@ -24,7 +24,6 @@
     if(isset($_SESSION["logged-in"]) && $_SESSION["logged-in"] === true){
         header(("Location: index.php"));
     }
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
